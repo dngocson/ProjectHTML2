@@ -1,0 +1,125 @@
+.service {
+  margin-top: 20rem;
+  padding: 6.8rem 0 10rem;
+  background: #fff6ed;
+  &_link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    padding: 2rem;
+    border: 2px solid #ff5b2e;
+    border-radius: 999rem;
+    text-align: center;
+    color: #ff5b2e;
+    z-index: 50;
+    text-align: center;
+    text-justify: center;
+  }
+  &__imgHolder {
+    grid-column: 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    grid-row: 2 / span 3;
+    order: 2;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    background-color: transparent;
+    & figure {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+        border-radius: 1rem;
+        opacity: 1;
+        height: 35rem;
+        z-index: 1;
+      }
+    }
+  }
+  &__mainImg {
+    width: 45rem;
+    height: 60rem;
+    z-index: 10;
+    position: relative;
+  }
+  &__top {
+    grid-column: span 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__desc {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #5e6085;
+  }
+  &__heading {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    color: #000958;
+  }
+  &__card {
+    width: 29.4rem;
+    height: 20.8rem;
+    background: #ffffff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 1rem;
+
+    &_holder {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    &_title {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      color: #000958;
+    }
+    &_desc {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+    &_link {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: #34396a;
+    }
+    &_img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
+.container {
+  max-width: calc(100% - 4.8rem);
+  width: 117rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: (repeat(4, 1fr));
+  row-gap: 3rem;
+}
