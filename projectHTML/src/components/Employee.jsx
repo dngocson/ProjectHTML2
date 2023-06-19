@@ -3,10 +3,6 @@ import E1 from "../assets/Employee2/E1.png";
 import E2 from "../assets/Employee2/E2.png";
 import E3 from "../assets/Employee2/E3.png";
 import E4 from "../assets/Employee2/E4.png";
-// import D1 from "../assets/Employee2/decor1.png";
-// import D2 from "../assets/Employee2/decor2.png";
-// import D3 from "../assets/Employee2/deocor3.png";
-// import D4 from "../assets/Employee2/decor4.png";
 const Employee = () => {
   return (
     <section className={style.container}>
@@ -51,6 +47,9 @@ const Employee = () => {
             <p className={style.card_name}>Lucas Tony</p>
           </div>
         </div>
+        <a href="#!" className={style.employee_link}>
+          View All Team
+        </a>
       </div>
     </section>
   );

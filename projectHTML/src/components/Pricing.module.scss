@@ -1,0 +1,160 @@
+.pricing {
+  background-color: #fff6ed;
+  margin-top: 13rem;
+  padding-bottom: 5rem;
+  &__heading {
+    padding-top: 9rem;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    text-align: center;
+    color: #000958;
+    padding-bottom: 3.5rem;
+  }
+  &__desc {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #656689;
+    width: 70.9rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__switch_label {
+    width: 27.6rem;
+    height: 5.6rem;
+    border: 1px solid red;
+    border-radius: 99rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    user-select: none;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background-color: #ff5b2e;
+      border-radius: inherit;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__switch_value {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 0 3rem;
+  }
+  &__switch_swap {
+    display: flex;
+    justify-content: center;
+  }
+  &__switch_input:checked + .pricing__switch_label::before {
+    left: auto;
+    right: 0;
+  }
+
+  &__switch_input:not(:checked)
+    + .pricing__switch_label
+    .pricing__switch_value:nth-of-type(2) {
+    color: #ff5b2e;
+  }
+  &__switch_input:checked
+    + .pricing__switch_label
+    .pricing__switch_value:nth-of-type(1) {
+    color: #ff5b2e;
+  }
+  &__switch {
+    margin-top: 3.8rem;
+  }
+  &__switch_inner {
+    position: relative;
+  }
+  &__sale_off {
+    position: absolute;
+    top: 0;
+    right: -20rem;
+  }
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5.6rem auto;
+  max-width: 120rem;
+}
+
+.card {
+  padding: 2rem;
+  width: 30rem;
+  height: 40rem;
+  background: #ffffff;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &_type {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #ff5b2e;
+  }
+  &_daycare {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #3f4065;
+  }
+  &_price {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 3.4rem;
+    color: #000958;
+  }
+  &_feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &_name {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      color: #656689;
+    }
+  }
+  &_link {
+    text-align: center;
+    align-self: center;
+    padding: 2rem 4rem;
+    display: block;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    border-radius: 4rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #ff5b2e;
+  }
+}
