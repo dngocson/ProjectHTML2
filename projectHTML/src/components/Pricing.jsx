@@ -101,7 +101,6 @@ const CardData = [
 ];
 
 export const PricingCard = ({ type, daycare, price, service }) => {
-  console.log(service);
   return (
     <li>
       <div className={style.card}>

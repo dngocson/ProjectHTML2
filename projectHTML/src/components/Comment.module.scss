@@ -1,0 +1,122 @@
+.comment {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7rem;
+  &_container {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+    position: relative;
+  }
+  &_imgWraper {
+    width: 27.4rem;
+    height: 42.7rem;
+    position: relative;
+    border-radius: 13.7rem;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #ffda54;
+      border-radius: inherit;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      z-index: -1;
+    }
+  }
+  &_img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  &_content {
+    width: 55.3rem;
+  }
+  &_title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    color: #000958;
+  }
+  &_comment {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #000000;
+    padding: 2.4rem 0;
+  }
+  &_author {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #282828;
+  }
+  &_arrow_left {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999rem;
+    border: 1.5px solid #ffd1c4;
+    left: 0;
+    transform: translateY(50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff5b2e;
+    &:hover {
+      background-color: #ff5b2e;
+      color: white;
+    }
+  }
+  &_arrow_right {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999rem;
+    border: 1.5px solid #ffd1c4;
+    right: 0;
+    transform: translateY(50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff5b2e;
+    &:hover {
+      background-color: #ff5b2e;
+      color: white;
+    }
+  }
+}
+.comment_dots {
+  display: flex;
+  gap: 1rem;
+}
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 999rem;
+  border: 1px solid #ff5b2e;
+  &:hover {
+    background-color: #ff5b2e;
+  }
+  &:nth-child(1) {
+    background-color: #ff5b2e;
+    width: 2rem;
+  }
+}
+.content {
+  width: 100%;
+}
