@@ -133,16 +133,19 @@ html {
   background-color: #fffaf5;
   box-sizing: border-box;
   font-size: 62.5%;
+  @media only screen and (max-max-width: 1200px) {
+    font-size: 50%;
+  }
 }
 ////////////////////////////////////////
 .mainContainer {
-  max-width: 144rem;
+  max-max-width: 144.4rem;
   margin: 0 auto;
   height: 500rem;
 }
 .sectionContainer {
-  max-width: calc(100% - 4.8rem);
-  width: 117rem;
+  max-max-width: calc(100% - 4.8rem);
+  max-width: 117rem;
   margin: 0 auto;
 }
 .headerContainer {
@@ -186,7 +189,7 @@ html {
     font-weight: bold;
     font-size: 1.4rem;
     line-height: 1.4rem;
-    width: 11.7rem;
+    max-width: 11.7rem;
     line-height: 5rem;
     text-align: center;
 
@@ -218,7 +221,7 @@ html {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 38.8rem;
+    max-width: 38.8rem;
     height: 48.8rem;
     background: #fe997b;
     border-radius: 1.6rem;
@@ -226,7 +229,7 @@ html {
 
     &-small {
       align-self: flex-end;
-      width: 18.6rem;
+      max-width: 18.6rem;
       height: 24.4rem;
       margin: 0 0 -5.8rem -2.4rem;
       border: 0.2rem solid #f7dddf;
@@ -235,7 +238,7 @@ html {
   }
 
   &__img {
-    max-width: 100%;
+    max-max-width: 100%;
     max-height: 100%;
     border-radius: inherit;
   }
@@ -260,7 +263,7 @@ html {
     left: 12.9rem;
     bottom: 0;
     left: 16rem;
-    width: 20rem;
+    max-width: 20rem;
     height: 14rem;
     padding: 1.8rem 1.4rem;
     background: #fff;
@@ -278,7 +281,7 @@ html {
         color: #181e52;
       }
       &__thumb {
-        width: 4rem;
+        max-width: 4rem;
         height: 4rem;
         border-radius: 1rem;
         object-fit: cover;
@@ -303,7 +306,7 @@ html {
 
       &__skeleton {
         margin-top: 0.6rem;
-        width: var(--width, 11.8rem);
+        max-width: var(--max-width, 11.8rem);
         height: 0.4rem;
         background: #000958;
         opacity: 0.08;
@@ -311,7 +314,7 @@ html {
       }
 
       &__separate {
-        width: 100%;
+        max-width: 100%;
         height: 0.2rem;
         margin: 2rem 0;
         background: #f2f2f2;
@@ -330,7 +333,7 @@ html {
 
   &__desc {
     font-family: "Poppins";
-    width: 39.1rem;
+    max-width: 39.1rem;
     margin-top: 2.4rem;
     font-size: 1.6rem;
     line-height: 1.88;
@@ -380,7 +383,7 @@ html {
 ///////////////ABOUT
 .section__ {
   &heading {
-    width: 44.4rem;
+    max-width: 44.4rem;
     font-family: "Sora";
     font-style: normal;
     font-weight: bold;
@@ -389,7 +392,7 @@ html {
     color: #000958;
   }
   &desc {
-    width: 44.4rem;
+    max-width: 44.4rem;
     font-family: "Poppins";
     margin-top: 2.4rem;
     font-style: normal;
@@ -448,7 +451,7 @@ html {
       color: #48496a;
       &-icon {
         background-color: #ff5d31;
-        width: 2.5rem;
+        max-width: 2.5rem;
         height: 2.5rem;
         display: flex;
         justify-content: center;
@@ -456,7 +459,7 @@ html {
         border-radius: 0.4rem;
       }
       &-icon img {
-        width: 1.2rem;
+        max-width: 1.2rem;
         height: 1.2rem;
       }
     }
@@ -467,7 +470,7 @@ html {
     align-items: flex-end;
     justify-content: flex-end;
     &--decor {
-      width: 13.4rem;
+      max-width: 13.4rem;
       height: 9.5rem;
       position: absolute;
       top: 15rem;
@@ -475,20 +478,20 @@ html {
       z-index: -1;
     }
     &--picture {
-      width: 45rem;
+      max-width: 45rem;
     }
     &--imageWraper::before {
       content: "";
       position: absolute;
       bottom: 0;
-      width: 49rem;
+      max-width: 49rem;
       height: 33rem;
       background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
       border-radius: 1.6rem;
       z-index: -1;
     }
     &__textContent {
-      width: 13.6rem;
+      max-width: 13.6rem;
       height: 15.6rem;
       background: #5bd6e2;
       box-shadow: -1.5rem 2.6rem 4.8rem rgba(85, 240, 255, 0.17);
@@ -502,7 +505,7 @@ html {
       top: 15rem;
       &-decor {
         position: absolute;
-        width: 8.5rem;
+        max-width: 8.5rem;
         height: 8.5rem;
         top: -3.5rem;
         right: -3.5rem;
@@ -525,7 +528,7 @@ html {
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 2rem;
-        width: 8.3rem;
+        max-width: 8.3rem;
         height: 4rem;
         text-align: center;
         color: #c6f4f9;
@@ -538,7 +541,7 @@ html {
   position: relative;
 }
 .about__card {
-  width: 45.8rem;
+  max-width: 45.8rem;
   height: 50rem;
   left: 13.5rem;
   top: 1.6rem;
@@ -546,7 +549,7 @@ html {
   background: #c6e2fa;
   border-radius: 1.8rem;
   &-picture {
-    width: 45.8rem;
+    max-width: 45.8rem;
     height: 50rem;
     filter: drop-shadow(0px 0.3rem 6.3rem rgba(153, 183, 208, 0.59));
   }
@@ -556,27 +559,27 @@ html {
     position: absolute;
     top: 1rem;
     right: 7rem;
-    width: 1rem;
+    max-width: 1rem;
     height: 3rem;
     z-index: 10;
   }
   &2 {
     position: absolute;
-    width: 2.3rem;
+    max-width: 2.3rem;
     height: 4rem;
     top: -1.5rem;
     right: 3rem;
   }
   &3 {
     position: absolute;
-    width: 6.5rem;
+    max-width: 6.5rem;
     height: 3.5rem;
     top: 2rem;
     right: -3rem;
   }
   &4 {
     position: absolute;
-    width: 2.3rem;
+    max-width: 2.3rem;
     height: 2.55rem;
     right: -4rem;
     top: 25rem;
@@ -584,14 +587,14 @@ html {
   &5 {
     position: absolute;
     bottom: 0;
-    width: 2rem;
+    max-width: 2rem;
     height: 2.5rem;
     right: 3rem;
     bottom: 15rem;
   }
   &6 {
     position: absolute;
-    width: 10rem;
+    max-width: 10rem;
     height: 10rem;
     bottom: 0;
     bottom: -3rem;
@@ -599,14 +602,14 @@ html {
   }
   &7 {
     position: absolute;
-    width: 10rem;
+    max-width: 10rem;
     height: 10rem;
     bottom: -4rem;
     right: -4rem;
   }
   &8 {
     position: absolute;
-    width: 10rem;
+    max-width: 10rem;
     height: 10rem;
     bottom: 0;
     bottom: -5rem;
@@ -637,7 +640,7 @@ html {
     height: 0.2rem;
     background: #ff5b2e;
     opacity: 1;
-    width: 10rem;
+    max-width: 10rem;
     z-index: 2;
   }
   &--item {
@@ -646,7 +649,7 @@ html {
     justify-content: center;
     gap: 1rem;
     &-img {
-      width: 3rem;
+      max-width: 3rem;
     }
     &-text {
       font-family: "Sora";
@@ -665,7 +668,7 @@ html {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3rem;
-  width: 51.1rem;
+  max-width: 51.1rem;
   height: 9rem;
   margin: 2.4rem 0;
   color: #656689;
