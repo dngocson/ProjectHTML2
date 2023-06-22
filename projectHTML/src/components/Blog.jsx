@@ -63,8 +63,10 @@ const BlogCard = ({ date, title, img, desc }) => {
         <p className={style.card_date}>{date}</p>
         <img className={style.card_img} src={img} alt="card" />
       </div>
-      <h3 className={style.card_title}>{title}</h3>
-      <p className={style.card_desc}>{desc}</p>
+      <div className={style.card_textContent}>
+        <h3 className={style.card_title}>{title}</h3>
+        <p className={style.card_desc}>{desc}</p>
+      </div>
     </li>
   );
 };

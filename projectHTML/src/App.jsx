@@ -7,6 +7,7 @@ import Employee from "./components/Employee";
 import Pricing from "./components/Pricing";
 import Comment from "./components/Comment";
 import Blog from "./components/Blog";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Pricing />
         <Comment />
         <Blog />
+        <Contact />
       </main>
     </div>
   );

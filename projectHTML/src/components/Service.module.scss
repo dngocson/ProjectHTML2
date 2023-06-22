@@ -8,13 +8,17 @@
     font-size: 1.7rem;
     line-height: 1.7rem;
     padding: 2rem;
-    border: 2px solid #ff5b2e;
+    border: 2px solid rgba(255, 91, 46, 0.8);
     border-radius: 999rem;
     text-align: center;
     color: #ff5b2e;
     z-index: 50;
     text-align: center;
     text-justify: center;
+    &:hover {
+      color: white;
+      background-color: #ff5b2e;
+    }
   }
   &__imgHolder {
     grid-column: 2 / span 2;

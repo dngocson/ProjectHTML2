@@ -156,5 +156,9 @@
     font-size: 1.6rem;
     line-height: 1.6rem;
     color: #ff5b2e;
+    &:hover {
+      color: white;
+      background-color: #ff5b2e;
+    }
   }
 }
