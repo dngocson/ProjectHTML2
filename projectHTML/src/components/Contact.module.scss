@@ -1,0 +1,91 @@
+.contact {
+  width: 144rem;
+  margin: 0 auto;
+  &_left {
+    width: 61.5rem;
+    height: 51.5rem;
+    background-color: #fff6ed;
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 11rem;
+    }
+  }
+  &_logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    &_img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    &_title {
+      color: #000958;
+      font-size: 2.5rem;
+      font-family: Sora;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+  }
+  &_input {
+    padding: 1.5rem 5rem;
+    border-radius: 99rem;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    outline: none;
+    &::placeholder {
+      color: #656689;
+      font-size: 1.4rem;
+      font-family: Poppins;
+      font-weight: 300;
+      line-height: 1.4rem;
+    }
+  }
+  &_button {
+    width: 4.5rem;
+    height: 4.6rem;
+    border-radius: 99rem;
+    border: none;
+    background-color: #ff5b2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  &_form {
+    position: relative;
+    width: fit-content;
+  }
+  &_icons {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &_title {
+      color: #000958;
+      font-size: 1.8rem;
+      font-family: Sora;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+    &_list {
+      display: flex;
+      gap: 2rem;
+    }
+    &_icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      background-color: white;
+      border-radius: 999rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.container {
+  display: flex;
+}
