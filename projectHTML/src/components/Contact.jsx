@@ -1,6 +1,6 @@
 import style from "./Contact.module.scss";
 import logo from "../assets/Contact/Group 8.png";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -47,57 +47,39 @@ const data = [
   },
 ];
 const Contact = () => {
-  const onsubmitHandler = (e) => {
-    e.preventDefault();
-    return;
-  };
   return (
-    <section className={style.contact}>
-      <div className={style.container}>
-        <div className={style.contact_left}>
-          <div className={style.contact_left_content}>
-            <div className={style.contact_logo}>
-              <img src={logo} alt="logo" className={style.contact_logo_img} />
-              <h3 className={style.contact_logo_title}>Lucy</h3>
-            </div>
-            <form onSubmit={onsubmitHandler} className={style.contact_form}>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className={style.contact_input}
-              />
-              <button type="submit" className={style.contact_button}>
-                <AiOutlineArrowRight size={24} color="white" />
-              </button>
-            </form>
-            <div className={style.contact_icons}>
-              <h4 className={style.contact_icons_title}>Follow Us</h4>
-              <div className={style.contact_icons_list}>
-                <div className={style.contact_icons_icon}>
-                  <BsFacebook color="#000958" size={17} />
-                </div>
-                <div className={style.contact_icons_icon}>
-                  <BsTwitter color="#000958" size={17} />
-                </div>
-                <div className={style.contact_icons_icon}>
-                  <AiFillLinkedin color="#000958" size={17} />
-                </div>
-                <div className={style.contact_icons_icon}>
-                  <AiOutlineInstagram color="#000958" size={17} />
-                </div>
-              </div>
+    <section>
+      <div className="container">
+        <div className="contact_left">
+          <div className="logo">
+            <img src={logo} alt="logo" className="img" />
+            <h3>Lucy</h3>
+          </div>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="input"
+          />
+          <button>
+            <BsFillArrowRightCircleFill />
+          </button>
+          <div className="icons">
+            <h4>Follow Us</h4>
+            <div className="icons_list">
+              <BsFacebook />
+              <BsTwitter />
+              <AiFillLinkedin />
+              <AiOutlineInstagram />
             </div>
           </div>
         </div>
-        <div className={style.contact_right}>
-          <ul className={style.contact_right_container}>
+        <div className="contact_right">
+          <ul>
             {data.map((item) => (
-              <li className={style.contact_right_list} key={item.id}>
-                <h4 className={style.contact_right_list_title}>{item.title}</h4>
+              <li key={item.id}>
+                <h4>{item.title}</h4>
                 {item.info.map((item) => (
-                  <p className={style.contact_right_list_desc} key={item.id}>
-                    {item.content}
-                  </p>
+                  <p key={item.id}>{item.content}</p>
                 ))}
               </li>
             ))}
