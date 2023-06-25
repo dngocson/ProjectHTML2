@@ -22,7 +22,7 @@ const About = () => {
             <h2 className="about__heading section__heading">
               Best Agency For Your Pet.
             </h2>
-            <p className="about__desc section__desc">
+            <p className="section__desc about__desc ">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -117,9 +117,8 @@ const About = () => {
               </div>
             </div>
             <p className="about__content-text">
-              We offer long-term and short-term boarding. Every dog has its own
-              private, spacious room and daily individual time in our large play
-              yard.
+              While you're on holiday, here's where your furry friends will
+              spend their time 1.
             </p>
             <a className="about__content__link">View More</a>
           </section>

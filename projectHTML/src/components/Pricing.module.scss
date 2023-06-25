@@ -87,6 +87,10 @@
     position: absolute;
     top: 0;
     right: -20rem;
+    @media only screen and (max-width: 1200px) {
+      width: 15rem;
+      right: -15rem;
+    }
   }
 }
 .cardContainer {
@@ -94,6 +98,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin: 5.6rem auto;
   max-width: 120rem;
+
+  justify-items: center;
 }
 
 .card {
@@ -102,7 +108,7 @@
   height: 40rem;
   background: #ffffff;
   border-radius: 2rem;
-  padding-top: 2rem;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;

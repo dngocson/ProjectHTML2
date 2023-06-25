@@ -1,5 +1,5 @@
 .blog {
-  width: 120rem;
+  max-width: 120rem;
   margin: 12rem auto;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,6 @@
   &_imgHolder {
     width: 34rem;
     height: 36rem;
-
     border-radius: 3rem;
     position: relative;
   }
@@ -116,4 +115,17 @@
 
 .card:nth-of-type(3) .card_imgHolder {
   background-color: #5bd6e2;
+}
+@media only screen and (max-width: 768px) {
+  .card_imgHolder {
+    width: 28rem;
+    height: 31.5rem;
+  }
+  .card_img {
+    width: 25rem;
+    height: 27rem;
+  }
+  .card_textContent {
+    width: 26rem;
+  }
 }

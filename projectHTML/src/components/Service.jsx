@@ -56,6 +56,7 @@ const Service = () => {
             View all services
           </a>
         </div>
+
         {serviceList.map((item) => (
           <ServiceItem key={item.id} title={item.heading} desc={item.content} />
         ))}
