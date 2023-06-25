@@ -408,6 +408,9 @@ html {
   &__content {
     padding-top: 3rem;
   }
+  &__desc {
+    max-width: 55rem;
+  }
   &__heading {
     font-family: "Sora";
     font-style: normal;
@@ -692,6 +695,12 @@ html {
   }
 }
 @media only screen and (max-width: 786px) {
+  .hero {
+    padding: 1rem;
+  }
+  .about {
+    padding: 1rem;
+  }
   .hero__heading {
     font-size: 5rem;
   }
@@ -716,7 +725,7 @@ html {
   }
 
   .about__media {
-    width: 90%;
+    width: 95%;
   }
   .about__media__textContent {
     left: 15px;
@@ -729,5 +738,33 @@ html {
     &-text {
       font-size: 1.2rem;
     }
+  }
+  .about__card-picture {
+    width: 40rem;
+    height: 50rem;
+  }
+  .about--decori6 {
+    bottom: 1rem;
+    right: -2rem;
+  }
+  .about--decori7 {
+    bottom: 0rem;
+    right: -3rem;
+  }
+  .about--decori8 {
+    bottom: -1rem;
+    right: -4rem;
+  }
+  .about__features::before {
+    bottom: -1rem;
+  }
+  .about__features::after {
+    bottom: -1rem;
+  }
+  .about__media--imageWraper::before {
+    width: 47rem;
+  }
+  .about__content-text {
+    width: 45rem;
   }
 }
