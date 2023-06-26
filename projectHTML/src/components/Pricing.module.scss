@@ -168,3 +168,35 @@
     }
   }
 }
+@media only screen and (max-width: 786px) {
+  .card {
+    width: 25rem;
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .card {
+    font-size: 62.5%;
+    padding: 3rem;
+    width: 20rem;
+  }
+  .card_link {
+    padding: 1rem 3rem;
+  }
+  .pricing__desc {
+    width: 100%;
+  }
+  .pricing__switch_label {
+    width: 22rem;
+    height: 5rem;
+  }
+  .pricing__sale_off {
+    width: 12rem;
+    right: -10rem;
+    bottom: 7rem;
+  }
+}

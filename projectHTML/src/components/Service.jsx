@@ -35,7 +35,7 @@ const Service = () => {
     },
     {
       id: 6,
-      heading: "Pet Medical Admin",
+      heading: "Pet Medical",
       content:
         "Our team of experienced professionals can help with everything from pills to injections.",
     },

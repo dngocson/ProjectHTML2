@@ -103,6 +103,7 @@
 .comment_dots {
   display: flex;
   gap: 1rem;
+  margin-top: 2rem;
 }
 .dot {
   width: 0.8rem;
@@ -119,4 +120,39 @@
 }
 .content {
   width: 100%;
+}
+@media only screen and (max-width: 786px) {
+  .comment_container {
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .comment_container {
+    flex-direction: column-reverse;
+  }
+  .comment_comment {
+    padding: 2rem 2rem;
+  }
+  .comment_title {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .comment_content {
+    width: 100%;
+  }
+  .comment_imgWraper {
+    width: 32rem;
+  }
+  .comment_img {
+    width: 32rem;
+  }
+  .comment_arrow_left {
+    bottom: 20%;
+  }
+  .comment_arrow_right {
+    bottom: 20%;
+  }
+  .comment_author {
+    padding: 2rem;
+  }
 }
