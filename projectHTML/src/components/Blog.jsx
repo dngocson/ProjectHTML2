@@ -50,6 +50,9 @@ const Blog = () => {
           />
         ))}
       </ul>
+      <a href="#!" className={style.blog_link_responsive}>
+        View All Blog
+      </a>
     </section>
   );
 };

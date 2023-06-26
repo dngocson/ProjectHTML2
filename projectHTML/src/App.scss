@@ -768,3 +768,34 @@ html {
     width: 45rem;
   }
 }
+@media only screen and (max-width: 425px) {
+  .hero__inner {
+    flex-direction: column;
+  }
+  .hero__heading {
+    text-align: center;
+  }
+  .hero__media {
+    order: 2;
+  }
+  .hero__desc {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__media {
+    display: none;
+  }
+  .about__media {
+    display: none;
+  }
+  .about--inner {
+    grid-template-columns: 1fr;
+  }
+  .about__heading {
+    max-width: 100%;
+    text-align: center;
+  }
+  .about__content-text {
+    width: 100%;
+  }
+}

@@ -114,3 +114,31 @@
   display: flex;
   gap: 10rem;
 }
+@media only screen and (max-width: 786px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .contact_left {
+    width: 100%;
+  }
+  .contact_logo {
+    align-self: center;
+  }
+  .contact_icons_title {
+    align-self: center;
+  }
+  .contact_right {
+    padding: 3rem;
+  }
+  .contact_icons_list {
+    justify-content: space-between;
+  }
+}

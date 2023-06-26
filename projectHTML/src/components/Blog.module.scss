@@ -116,6 +116,9 @@
 .card:nth-of-type(3) .card_imgHolder {
   background-color: #5bd6e2;
 }
+.blog_link_responsive {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   .card_imgHolder {
     width: 28rem;
@@ -127,5 +130,50 @@
   }
   .card_textContent {
     width: 26rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .card {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .card_textContent {
+    width: 23rem;
+  }
+  .blog_header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog_desc_link {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .blog_link {
+    display: none;
+  }
+  .blog_link_responsive {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #ff5b2e;
+    padding: 2rem;
+    border: 1px solid #ff5b2e;
+    border-radius: 999rem;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    &:hover {
+      color: white;
+      background-color: #ff5b2e;
+    }
   }
 }
