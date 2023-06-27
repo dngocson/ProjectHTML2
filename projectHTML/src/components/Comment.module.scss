@@ -156,3 +156,11 @@
     padding: 2rem;
   }
 }
+@media only screen and (max-width: 320px) {
+  .comment_imgWraper {
+    width: 28rem;
+  }
+  .comment_img {
+    width: 28rem;
+  }
+}

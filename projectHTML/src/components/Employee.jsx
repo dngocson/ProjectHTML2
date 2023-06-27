@@ -5,7 +5,7 @@ import E3 from "../assets/Employee2/E3.png";
 import E4 from "../assets/Employee2/E4.png";
 const Employee = () => {
   return (
-    <section className={style.container}>
+    <section className={style.container} id="employee">
       <div className={style.employee}>
         <p className={style.employee_desc}>Pet care staff</p>
         <h3 className={style.employee_heading}>Meet Our Groomers</h3>

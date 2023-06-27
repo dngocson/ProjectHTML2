@@ -187,3 +187,8 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 375px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

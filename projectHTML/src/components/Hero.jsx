@@ -7,7 +7,7 @@ import subpic2 from "../assets/img02.png";
 import { AiOutlineRightCircle } from "react-icons/ai";
 const Hero = () => {
   return (
-    <div className="sectionContainer">
+    <div className="sectionContainer" id="hero">
       <section className="hero">
         <div className="container">
           <div className="hero__inner">

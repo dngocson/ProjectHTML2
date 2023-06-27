@@ -4,7 +4,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 const Comment = () => {
   return (
-    <section className={style.comment}>
+    <section className={style.comment} id="comment">
       <div className={style.content}>
         <div className={style.comment_container}>
           <div className={style.comment_imgWraper}>

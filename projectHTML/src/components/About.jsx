@@ -15,7 +15,7 @@ import icon3 from "../assets/about/Icon3.png";
 const About = () => {
   return (
     <div className="sectionContainer">
-      <section className="about">
+      <section className="about" id="about">
         <div className="about--inner">
           <section className="about__content">
             <p className="about__label">// About //</p>

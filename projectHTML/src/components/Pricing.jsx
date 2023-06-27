@@ -3,7 +3,7 @@ import saleoff from "../assets/pricing/Vector 13.png";
 import { AiOutlineCheck } from "react-icons/ai";
 const Pricing = () => {
   return (
-    <section className={style.pricing}>
+    <section className={style.pricing} id="pricing">
       <div className={style.pricing__container}>
         <h2 className={style.pricing__heading}>The Best Choice</h2>
         <p className={style.pricing__desc}>

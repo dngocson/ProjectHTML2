@@ -42,7 +42,7 @@ const Service = () => {
   ];
 
   return (
-    <section className={style.service}>
+    <section className={style.service} id="service">
       <div className={style.container}>
         <section className={style.service__top}>
           <p className={style.service__desc}>What we do for you?</p>

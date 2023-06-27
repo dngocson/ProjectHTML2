@@ -142,3 +142,21 @@
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 375px) {
+  .contact_input {
+    padding: 1.5rem 3rem;
+  }
+  .contact_left_content {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_right_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .contact_right_list_title {
+    text-align: center;
+  }
+}

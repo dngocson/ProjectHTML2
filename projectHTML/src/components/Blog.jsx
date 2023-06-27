@@ -27,7 +27,7 @@ const cardData = [
 ];
 const Blog = () => {
   return (
-    <section className={style.blog}>
+    <section className={style.blog} id="blog">
       <div className={style.blog_header}>
         <h3 className={style.blog_title}>Our Blog</h3>
         <div className={style.blog_desc_link}>
